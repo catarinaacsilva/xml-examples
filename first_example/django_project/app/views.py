@@ -2,11 +2,19 @@ from django.shortcuts import render
 from django.http import HttpRequest, HttpResponse
 from datetime import datetime
 
+#TODO: verify this error
+from xml_proc import read_xml, valid_xml
+
 def sendinfo(request):
     assert isinstance(request, HttpRequest)
     if 'xml' in request.POST and 'schema' in request.POST:
         xml = request.POST['xml']
         schema = request.POST['schema']
+        # TODO: verify if it is correct
+        result_read = read(xml)
+        result_read = request.POST["result read"]
+        result_valid = valid_doc(xml)
+        result_valid = request.POST["result validate"]
         if xml and schema:
             return render(
                 request,
@@ -14,6 +22,8 @@ def sendinfo(request):
                 {
                     'xml':xml,
                     'schema':schema,
+                    'resut read': result_read,
+                    'result valid': result_valid,
                 }
             )
         else:
