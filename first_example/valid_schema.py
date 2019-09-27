@@ -69,11 +69,6 @@ def validate(file_xml: str, file_schema: str):
         except:
             print('Unknown error, exiting.')
             quit()
-    
-
-    
-
-validate("mect.xml", "curso.xsd")
 
 
 
