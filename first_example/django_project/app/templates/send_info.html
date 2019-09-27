@@ -1,0 +1,13 @@
+{% block content %}
+
+    {% if error %}
+        <p> style="..."Erro: Insira a informação pedida</p>
+    {% endif %}
+
+    <form action="." method="post">
+    {% csrf_token %}
+    <p>xml: <input type="text" name="xml"/> </p>
+    <p>schema: <input type="text" name="schema"/></p>
+    <p><input type="submit" value="Enviar"/></p>
+    </form>
+{% endblock %}
