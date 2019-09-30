@@ -31,9 +31,9 @@
 
     `sudo pip install lxml==4.4.1`
 
-3. Run xml_proc.py
+3. Run main.py
 
-    `python3 xml_proc.py`
+    `python3 main.py`
 
 ## Run - django project
 

@@ -3,7 +3,7 @@ from django.http import HttpRequest, HttpResponse
 from datetime import datetime
 
 #TODO: verify this error
-from xml_proc import read_xml, valid_xml
+from library.xml_proc import read_xml, valid_doc
 
 def sendinfo(request):
     assert isinstance(request, HttpRequest)
