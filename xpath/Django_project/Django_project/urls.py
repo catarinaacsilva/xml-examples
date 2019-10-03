@@ -19,5 +19,7 @@ from django.urls import path
 from app import views
 
 urlpatterns = [
-    path('cursos/', views.show_cursos, name='cursos'),
+    #path('cursos/', views.show_cursos, name='cursos'),
+    path('', views.index),
+    path('actionUrl', views.show_cursos),
 ]

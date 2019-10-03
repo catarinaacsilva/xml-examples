@@ -4,6 +4,8 @@ import xml.etree.ElementTree as ET
 from django.http import HttpRequest, HttpResponse
 from django.template import loader
 
+def index(request):
+	return render(request, 'index.html')
 
 def info_cursos_xml(xml_file: str):
     lista = []
@@ -13,9 +15,9 @@ def info_cursos_xml(xml_file: str):
         lista.append(curso.find('nome').text)
     return lista
 
-
 def show_cursos(request):
     #return HttpResponse(info_cursos_xml('cursos.xml'))
+
     template = loader.get_template('show_info.html')
     context = {
         'info': info_cursos_xml(('cursos.xml')),
