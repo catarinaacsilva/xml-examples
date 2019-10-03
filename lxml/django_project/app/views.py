@@ -11,7 +11,7 @@ def sendinfo(request):
         xml = request.POST['xml']
         schema = request.POST['schema']
         # TODO: verify if it is correct
-        result_read = read(xml)
+        result_read = read(xml)  
         result_read = request.POST["result read"]
         result_valid = valid_doc(xml)
         result_valid = request.POST["result validate"]
@@ -22,7 +22,7 @@ def sendinfo(request):
                 {
                     'xml':xml,
                     'schema':schema,
-                    'resut read': result_read,
+                    'result read': result_read,
                     'result valid': result_valid,
                 }
             )
