@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e092dd1-9812-4beb-9172-37a9a189c25c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../lxml/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/curso.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/.idea/django_project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/app/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/app/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/app/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/app/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/app/templates/send_info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/app/templates/send_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/app/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/app/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/django_project/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/django_project/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/django_project/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/django_project/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/library/valid_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/library/xml_proc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/django_project/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/mect.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/valid_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lxml/xml_proc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/curso.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/.idea/django_project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/app/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/app/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/app/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/app/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/app/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/app/templates/send_info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/app/templates/send_results.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/app/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/app/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/django_project/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/django_project/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/django_project/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/django_project/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/library/valid_schema.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/library/xml_proc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/django_project/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/mect.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/valid_schema.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first_example/xml_proc.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1RhCWu2AOQFDsxZF958QaLVHP7H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Django_project" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Django_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e092dd1-9812-4beb-9172-37a9a189c25c" name="Default Changelist" comment="" />
+      <created>1570109976017</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570109976017</updated>
+      <workItem from="1570109977222" duration="662000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
