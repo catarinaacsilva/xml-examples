@@ -1,5 +1,15 @@
 {% block content %}
-    <b>Display info about xml file:</b>
-    <p> {{ info }}</p>
+    <h1>Display information about xml file:</h1>
+    {% if info %}
+    <ul>
+      {% for i in info %}
+      <li>
+        <p> {{ i }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>There are no information on the xml file.</p>
+    {% endif %}
 {% endblock %}
 

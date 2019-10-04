@@ -15,12 +15,13 @@ def info_cursos_xml(xml_file: str):
         lista.append(curso.find('nome').text)
     return lista
 
+
 def show_cursos(request):
     #return HttpResponse(info_cursos_xml('cursos.xml'))
-
     template = loader.get_template('show_info.html')
+
     context = {
-        'info': info_cursos_xml(('cursos.xml')),
+            'info': info_cursos_xml(('cursos.xml')),
     }
     return HttpResponse(template.render(context, request))
 
