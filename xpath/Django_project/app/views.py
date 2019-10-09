@@ -18,6 +18,7 @@ def info_cursos_xml_dic(xml_file: str):
         dic.update({curso.find('nome').text : curso.find('guid').text})
     return dic
 
+
 # return a dictionary:
 #   key : name
 #   value: codigo
@@ -26,8 +27,9 @@ def info_codigo_xml_dic(xml_file: str):
     tree = ET.parse(xml_file)
     root = tree.getroot()
     for curso in root.findall('curso'):
-        dic.update({curso.find('nome').text : curso.find('codigo').text})
+        dic.update({curso.find('codigo').text : curso.find('guid').text})
     return dic
+
 
 # return a dictionary:
 #   key : name
@@ -54,10 +56,27 @@ def show_details(request):
 
     value = request.GET.get('item')
 
+    dic_cursos = info_cursos_xml_dic('cursos.xml')
+    dic_codigo = info_codigo_xml_dic('cursos.xml')
+    dic_grau = info_grau_xml_dic('cursos.xml')
+
+    for i in dic_cursos.keys():
+        if dic_cursos.get(i) == value:
+            name = i
+
+    for i in dic_codigo.keys():
+        if dic_codigo.get(i) == value:
+            codigo = i
+
+    for i in dic_grau.keys():
+        if dic_grau.get(i) == value:
+            grau = i
+
+
     context = {
-        'nome': ,
-        #'codigo': codigo,
-        #'grau': grau,
+        'nome': name,
+        'codigo': codigo,
+        'grau': grau,
         #'departamento': departamento,
         #'areaCientifica': areaCientifica,
         #'local': local
