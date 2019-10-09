@@ -1,7 +1,6 @@
 from django.shortcuts import render
 
 import xml.etree.ElementTree as ET
-import requests
 from django.http import HttpRequest, HttpResponse
 from django.template import loader
 
@@ -46,27 +45,17 @@ def show_cursos(request):
     template = loader.get_template('show_info.html')
 
     context = {
-            'info': info_cursos_xml_dic('cursos.xml').keys(),
+            'info': info_cursos_xml_dic('cursos.xml'),
     }
     return HttpResponse(template.render(context, request))
 
-def show_details(request, xml_file: str):
+def show_details(request):
     template = loader.get_template('details.html')
 
-    #vai buscar o numero da chave do link que foi inserida na url
-    #TODO: arranjar uma forma do item associado à chave ser colocado no link
-
-    # inserir o numero do item no link
-    nome = request.GET.get('i')
-
-    postData = {
-        'j': nome.items()
-    }
-
-    requests.post(postData)
+    value = request.GET.get('item')
 
     context = {
-        'nome': nome,
+        'nome': ,
         #'codigo': codigo,
         #'grau': grau,
         #'departamento': departamento,

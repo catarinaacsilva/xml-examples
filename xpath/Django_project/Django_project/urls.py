@@ -22,4 +22,5 @@ urlpatterns = [
     #path('cursos/', views.show_cursos, name='cursos'),
     path('', views.index),
     path('actionUrl', views.show_cursos),
+    path('detalhe', views.show_details),
 ]

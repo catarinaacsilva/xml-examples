@@ -2,9 +2,9 @@
     <h1>Display information about xml file:</h1>
     {% if info %}
     <ul>
-      {% for i in info %}
+      {% for k, v in info.items %}
       <li>
-        <a href="{{ i }}/?item={{ j }}">{{ i }}</a>
+        <a href="detalhe?item={{ v }}">{{ k }}</a>
       </li>
       {% endfor %}
     </ul>
@@ -12,4 +12,3 @@
     <p>There are no information on the xml file.</p>
     {% endif %}
 {% endblock %}
-
