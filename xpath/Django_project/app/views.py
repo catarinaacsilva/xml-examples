@@ -10,12 +10,12 @@ def index(request):
 # return a dictionary:
 #   key : name
 #   value: guid
-def info_cursos_xml_dic(xml_file: str):
+def info_cursos_xml_dic(xml_file: str, a: str, b:str, c: str):
     dic = {}
     tree = ET.parse(xml_file)
     root = tree.getroot()
-    for curso in root.findall('curso'):
-        dic.update({curso.find('nome').text : curso.find('guid').text})
+    for curso in root.findall(a):
+        dic.update({curso.find(b).text : curso.find(c).text})
     return dic
 
 

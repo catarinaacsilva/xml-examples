@@ -16,12 +16,12 @@ def info_cursos_xml(xml_file: str):
         lista.append(curso.find('nome').text)
     return lista
 
-def info_cursos_xml_dic(xml_file: str):
+def info_cursos_xml_dic(xml_file: str, a: str, b:str, c: str):
     dic = {}
     tree = ET.parse(xml_file)
     root = tree.getroot()
-    for curso in root.findall('curso'):
-        dic.update({curso.find('nome').text : curso.find('guid').text})
+    for curso in root.findall(a):
+        dic.update({curso.find(b).text : curso.find(c).text})
     return dic
         
 
