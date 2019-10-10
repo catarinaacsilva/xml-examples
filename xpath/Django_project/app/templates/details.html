@@ -3,7 +3,22 @@
     <p> {{ nome }}</p>
     <p> {{ codigo }}</p>
     <p> {{ grau }}</p>
-   <!-- <p> {{ departamento }}</p>
-    <p> {{ areaCientifica }}</p>
-    <p> {{ local }}</p>-->
+    <h2> Departamentos: </h2>
+    <ul>
+      {% for d in departamento %}
+      <li>
+        {{ d }}
+      </li>
+      {% endfor %}
+    </ul>
+
+    <h2> Áreas Cientificas: </h2>
+    <ul>
+      {% for a in areaCientifica %}
+      <li>
+        {{ a }}
+      </li>
+      {% endfor %}
+    </ul>
+    <p> {{ local }}</p>
 {% endblock %}
