@@ -23,4 +23,5 @@ urlpatterns = [
     path('', views.index),
     path('actionUrl', views.show_cursos),
     path('detalhe', views.show_details),
+    path('filter', views.show_grau),
 ]

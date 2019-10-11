@@ -54,5 +54,20 @@ def show_details(request):
     template = loader.get_template('details.html')
     value = request.GET.get('item')
     context = get_curso("cursos.xml", value)
-    print(context)
     return HttpResponse(template.render(context, request))
+
+
+def show_grau(request):
+    template = loader.get_template('show_cursos_in.html')
+    grau = request.GET.get('grau_nome')
+
+    graus=[]
+
+    tree = ET.parse('cursos.xml')
+    root = tree.getroot()
+    for c in root.findall('curso'):
+        if c.find('grau').text == grau:
+            graus.append(c.find('nome').text)
+
+    return HttpResponse(template.render({'graus':graus}, request))
+

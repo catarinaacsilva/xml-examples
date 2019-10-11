@@ -1,13 +1,14 @@
 {% block content %}
-    <b>Display info about xml file:</b>
+    <b>Display information about xml file:</b>
     <p> {{ nome }}</p>
     <p> {{ codigo }}</p>
-    <p> {{ grau }}</p>
-    <h2> Departamentos: </h2>
+    <a href="filter?grau_nome={{ grau }}">{{ grau }}</a>
+    <h2>Departamentos</h2>
     <ul>
       {% for d in departamento %}
       <li>
-        {{ d }}
+        <a href="filter?departamento_nome={{ departamento_nome }}">{{ d }}</a>
+        <!--{{ d }}-->
       </li>
       {% endfor %}
     </ul>
@@ -16,7 +17,8 @@
     <ul>
       {% for a in areaCientifica %}
       <li>
-        {{ a }}
+       <a href="filter?areaCientifica_nome={{ areaCientifica_nome }}">{{ a }}</a>
+        <!--{{ a }}-->
       </li>
       {% endfor %}
     </ul>
