@@ -58,7 +58,7 @@ def show_details(request):
 
 
 def show_grau(request):
-    template = loader.get_template('show_cursos_in.html')
+    template = loader.get_template('show_cursos_grau.html')
     grau = request.GET.get('grau_nome')
 
     graus=[]
@@ -71,3 +71,17 @@ def show_grau(request):
 
     return HttpResponse(template.render({'graus':graus}, request))
 
+def show_departamento(request):
+    template = loader.get_template('show_cursos_dep.html')
+    grau = request.GET.get('departamento_nome')
+
+    departamentos = []
+
+    tree = ET.parse('cursos.xml')
+    root = tree.getroot()
+    for c in root.findall('curso'):
+        if c.find('grau').text == grau:
+            for d in c.find('departamentos').findall("departamento"):
+                departamentos.append(d.text)
+
+    return HttpResponse(template.render({'departamento': departamentos}, request))
