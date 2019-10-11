@@ -49,8 +49,14 @@ def info_grau_xml_dic(xml_file: str):
 def show_cursos(request):
     template = loader.get_template('show_info.html')
 
+    dic = {}
+    tree = ET.parse('cursos.xml')
+    root = tree.getroot()
+    for c in root.findall('curso'):
+        dic.update({c.find('nome').text: c.find('guid').text})
+
     context = {
-        'info': info_cursos_xml_dic('cursos.xml'),
+        'info': dic,
     }
     return HttpResponse(template.render(context, request))
 
