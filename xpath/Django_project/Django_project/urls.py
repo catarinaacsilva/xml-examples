@@ -25,5 +25,6 @@ urlpatterns = [
     path('detalhe', views.show_details),
     path('filter_grau', views.show_grau),
     path('filter_dep', views.show_departamento),
+    path('filter_area', views.show_areacientifica),
     path('filter_local', views.show_local),
 ]

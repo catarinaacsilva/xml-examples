@@ -86,16 +86,31 @@ def show_departamento(request):
 
     return HttpResponse(template.render({'departamento': departamentos}, request))
 
-def show_local(request):
-    template = loader.get_template('show_cursos_local.html')
-    grau = request.GET.get('local_nome')
-
-    graus=[]
+def show_areacientifica(request):
+    template = loader.get_template('show_cursos_areas.html')
+    areacientifica = request.GET.get('areaCientifica_nome')
+    areascientificas = []
 
     tree = ET.parse('cursos.xml')
     root = tree.getroot()
     for c in root.findall('curso'):
-        if c.find('local').text == grau:
-            graus.append(c.find('nome').text)
+        if c.find('areascientificas').findall("areacientifica") == areacientifica:
+            print(areacientifica)
+            for d in c.find('nome'):
+                areascientificas.append(d.text)
 
-    return HttpResponse(template.render({'locais':graus}, request))
+    return HttpResponse(template.render({'areacientifica': areascientificas}, request))
+
+def show_local(request):
+    template = loader.get_template('show_cursos_local.html')
+    local = request.GET.get('local_nome')
+
+    locais=[]
+
+    tree = ET.parse('cursos.xml')
+    root = tree.getroot()
+    for c in root.findall('curso'):
+        if c.find('local').text == local:
+            locais.append(c.find('nome').text)
+
+    return HttpResponse(template.render({'locais':locais}, request))
