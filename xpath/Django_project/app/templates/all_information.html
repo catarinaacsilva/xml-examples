@@ -1,0 +1,14 @@
+{% block content %}
+    <h1>Display information about xml file:</h1>
+    {% if all %}
+    <ul>
+      {% for k in all %}
+      <li>
+        <p> {{ k }} </p>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>There are no information on the xml file.</p>
+    {% endif %}
+{% endblock %}

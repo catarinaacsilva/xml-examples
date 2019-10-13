@@ -113,3 +113,56 @@ def show_local(request):
             locais.append(c.find('nome').text)
 
     return HttpResponse(template.render({'locais':locais}, request))
+
+def all_departamentos(request):
+    template = loader.get_template('all_information.html')
+
+    lista = []
+    tree = ET.parse('cursos.xml')
+    root = tree.getroot()
+    for d in root.findall('curso/departamentos'):
+        lista.append(d.find('departamento').text)
+
+    context = {
+        'all': lista
+    }
+
+    return HttpResponse(template.render(context, request))
+
+#TODO remove repeated elements
+def all_areascientificas(request):
+    template = loader.get_template('all_information.html')
+
+    lista = []
+    tree = ET.parse('cursos.xml')
+    root = tree.getroot()
+    for d in root.findall('curso/areascientificas'):
+        lista.append(d.find('areacientifica').text)
+        #for i in lista:
+            #elem = d.find('areacientifica').text
+            #remove repeated elements
+            #if not i == elem:
+                #lista.append(elem)
+
+    context = {
+        'all': lista
+    }
+
+    return HttpResponse(template.render(context, request))
+
+
+#TODO remove repeated elements
+def all_locals(request):
+    template = loader.get_template('all_information.html')
+
+    lista = []
+    tree = ET.parse('cursos.xml')
+    root = tree.getroot()
+    for d in root.findall('curso'):
+        lista.append(d.find('local').text)
+
+    context = {
+        'all': lista
+    }
+
+    return HttpResponse(template.render(context, request))
