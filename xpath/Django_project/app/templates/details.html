@@ -2,12 +2,12 @@
     <b>Display information about xml file:</b>
     <p> {{ nome }}</p>
     <p> {{ codigo }}</p>
-    <a href="filter?grau_nome={{ grau }}">{{ grau }}</a>
+    <a href="filter_grau?grau_nome={{ grau }}">{{ grau }}</a>
     <h2>Departamentos</h2>
     <ul>
       {% for d in departamento %}
       <li>
-        <a href="filter?departamento_nome={{ departamento }}">{{ d }}</a>
+        <a href="filter_dep?departamento_nome={{ departamento }}">{{ d }}</a>
         <!--{{ d }}-->
       </li>
       {% endfor %}
@@ -17,10 +17,10 @@
     <ul>
       {% for a in areaCientifica %}
       <li>
-       <a href="filter?areaCientifica_nome={{ areaCientifica_nome }}">{{ a }}</a>
+       <a href="filter_area?areaCientifica_nome={{ areaCientifica_nome }}">{{ a }}</a>
         <!--{{ a }}-->
       </li>
       {% endfor %}
     </ul>
-    <p> {{ local }}</p>
+    <a href="filter_local?local_nome={{ local }}">{{ local }}</a>
 {% endblock %}

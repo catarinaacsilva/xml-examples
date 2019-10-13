@@ -1,0 +1,14 @@
+{% block content %}
+    <h1>Show cursos (filter) </h1>
+    {% if locais %}
+    <ul>
+      {% for i in locais %}
+      <li>
+        {{ i }}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>There are no cursos</p>
+    {% endif %}
+{% endblock %}
