@@ -166,3 +166,6 @@ def all_locals(request):
     }
 
     return HttpResponse(template.render(context, request))
+
+# after show info about curso is possible to see more about it
+#def more_info_curso(request):
