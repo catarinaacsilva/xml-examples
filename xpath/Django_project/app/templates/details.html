@@ -7,7 +7,7 @@
     <ul>
       {% for d in departamento %}
       <li>
-        <a href="filter_dep?departamento_nome={{ departamento }}">{{ d }}</a>
+        <a href="filter_dep?departamento_nome={{ d }}">{{ d }}</a>
         <!--{{ d }}-->
       </li>
       {% endfor %}
@@ -17,7 +17,7 @@
     <ul>
       {% for a in areaCientifica %}
       <li>
-       <a href="filter_area?areaCientifica_nome={{ areaCientifica_nome }}">{{ a }}</a>
+       <a href="filter_area?areaCientifica_nome={{ a }}">{{ a }}</a>
         <!--{{ a }}-->
       </li>
       {% endfor %}

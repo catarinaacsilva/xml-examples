@@ -79,12 +79,12 @@ def show_departamento(request):
     tree = ET.parse('cursos.xml')
     root = tree.getroot()
     for c in root.findall('curso'):
-        if c.find('departamentos').findall("departamento") == departamento:
-            print(departamento)
-            for d in c.find('nome'):
-                departamentos.append(d.text)
+        for d in c.find('departamentos').findall("departamento"):
+            if d.text == departamento:
+                departamentos.append(c.find('nome').text)
 
     return HttpResponse(template.render({'departamento': departamentos}, request))
+
 
 def show_areacientifica(request):
     template = loader.get_template('show_cursos_areas.html')
@@ -94,10 +94,9 @@ def show_areacientifica(request):
     tree = ET.parse('cursos.xml')
     root = tree.getroot()
     for c in root.findall('curso'):
-        if c.find('areascientificas').findall("areacientifica") == areacientifica:
-            print(areacientifica)
-            for d in c.find('nome'):
-                areascientificas.append(d.text)
+        for a in c.find('areascientificas').findall("areacientifica"):
+            if a.text == areacientifica:
+                areascientificas.append(c.find('nome').text)
 
     return HttpResponse(template.render({'areacientifica': areascientificas}, request))
 
