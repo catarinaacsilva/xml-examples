@@ -1,5 +1,5 @@
 import xml.etree.ElementTree as ET
-import lxml.etree as LET
+import lxml.etree as LET #to use on xslt
 import requests
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -169,6 +169,8 @@ def all_locals(request):
     return HttpResponse(template.render(context, request))
 
 # after show info about curso is possible to see more about it
+# Use xslt to transform xml in html page
+#input:xml --> xslt generate html template --> show information
 def more_info_curso(request):
     response = requests.get('http://acesso.ua.pt/xml//cursos.v5.asp?')
     if response.status_code == 200:
