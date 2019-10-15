@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET
+import lxml.etree as LET
 import requests
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -171,11 +172,11 @@ def all_locals(request):
 def more_info_curso(request):
     response = requests.get('http://acesso.ua.pt/xml//cursos.v5.asp?')
     if response.status_code == 200:
-        receive = ET.fromstring(response.content)
-        xslt = ET.parse('xslt_file.xsl')
-        transform = ET.XSLT(xslt)
+        receive = LET.fromstring(response.content)
+        xslt = LET.parse('xslt_file.xsl')
+        transform = LET.XSLT(xslt)
         newreceive = transform(receive)
-        content = ET.tostring(newreceive, pretty_print=True)
+        content = LET.tostring(newreceive, pretty_print=True)
         return HttpResponse(content)
 
     return HttpResponse("Error")
