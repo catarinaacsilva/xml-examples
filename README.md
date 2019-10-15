@@ -10,6 +10,11 @@
 
 ## xpath
 
+1. Web app:
+
+    - Use Xpath and XSLT
+    - Show information of XML on Web app with user interaction
+
 ## xqueries
 
 ## Authors
