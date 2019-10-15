@@ -1,5 +1,5 @@
 import xml.etree.ElementTree as ET
-
+import requests
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.template import loader
@@ -168,4 +168,15 @@ def all_locals(request):
     return HttpResponse(template.render(context, request))
 
 # after show info about curso is possible to see more about it
-#def more_info_curso(request):
+def more_info_curso(request):
+    response = requests.get('http://acesso.ua.pt/xml//cursos.v5.asp?')
+    if response.status_code == 200:
+        receive = ET.fromstring(response.content)
+        xslt = ET.parse('xslt_file.xsl')
+        transform = ET.XSLT(xslt)
+        newreceive = transform(receive)
+        content = ET.tostring(newreceive, pretty_print=True)
+        return HttpResponse(content)
+
+    return HttpResponse("Error")
+

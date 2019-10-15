@@ -30,4 +30,5 @@ urlpatterns = [
     path('infoDep', views.all_departamentos),
     path('infoArea', views.all_areascientificas),
     path('infoLocal', views.all_locals),
+    path('more_info_curso', views.more_info_curso)
 ]
