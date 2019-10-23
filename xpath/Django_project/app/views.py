@@ -112,6 +112,7 @@ def show_areacientifica(request):
 
     return HttpResponse(template.render({'areacientifica': areascientificas}, request))
 
+
 def show_local(request):
     template = loader.get_template('show_cursos_local.html')
     local = request.GET.get('local_nome')
@@ -125,6 +126,7 @@ def show_local(request):
             locais.append(c.find('nome').text)
 
     return HttpResponse(template.render({'locais':locais}, request))
+
 
 def all_departamentos(request):
     template = loader.get_template('all_information.html')
@@ -140,6 +142,7 @@ def all_departamentos(request):
     }
 
     return HttpResponse(template.render(context, request))
+
 
 #TODO remove repeated elements
 def all_areascientificas(request):
@@ -256,15 +259,8 @@ def validate(file_xml: str, file_schema: str):
 
 
 def write_info_xml(request):
-    #read xml file insert in form
-    open(request.POST.get('xml_file'), 'r')
+    pass
 
-    #get data from template
-    data_to_write = request.POST.get('new_info')
 
-    #copy xml file to another file -> new_xml_file
 
-    # Add data_to_write to file
 
-    #validate new_xml_file with validate function
-    validate()
