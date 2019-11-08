@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e092dd1-9812-4beb-9172-37a9a189c25c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../lxml/django_project/app/templates/send_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../lxml/django_project/app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lxml/django_project/app/templates/send_results.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../lxml/django_project/app/templates/validate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lxml/django_project/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../lxml/django_project/app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lxml/django_project/django_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../lxml/django_project/django_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lxml/django_project/library/valid_schema.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lxml/django_project/library/xml_proc.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/form_write.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/form_write.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cursos.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cursos.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../fire-webapp/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -102,6 +105,13 @@
       <workItem from="1571754145103" duration="1619000" />
       <workItem from="1571757996853" duration="1997000" />
       <workItem from="1571837024766" duration="4866000" />
+      <workItem from="1571845554198" duration="35000" />
+      <workItem from="1572367228989" duration="1429000" />
+      <workItem from="1572431510834" duration="1003000" />
+      <workItem from="1572451922373" duration="1014000" />
+      <workItem from="1572459849248" duration="31000" />
+      <workItem from="1573060197134" duration="660000" />
+      <workItem from="1573253625468" duration="1315000" />
     </task>
     <servers />
   </component>

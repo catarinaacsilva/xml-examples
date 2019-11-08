@@ -19,5 +19,6 @@ from django.urls import path
 from app import views
 
 urlpatterns = [
-    path('sendinfo/', views.sendinfo, name='sendinfo'),
+    path('', views.index),
+    path('validate', views.validate),
 ]
