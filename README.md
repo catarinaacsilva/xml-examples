@@ -1,5 +1,7 @@
 # xml examples
 
+Simple project to initial study of xml, lxml and xpath.
+
 ## lxml
 
 1. Program in python to:
@@ -15,7 +17,6 @@
     - Use Xpath and XSLT
     - Show information of XML on Web app with user interaction
 
-## xqueries
 
 ## Authors
 
